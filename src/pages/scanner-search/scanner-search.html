@@ -1,0 +1,22 @@
+<ion-header>
+</ion-header>
+
+<ion-content padding>
+  <ion-card text-center padding style="font-size: 15px">Escanee el código de un producto para obtener los detalles del mismo.</ion-card>
+  <h1>
+    <button ion-button color="primary" full round (click)="scan()">Escanear</button>
+  </h1>
+
+  <ion-card *ngIf="productFound">
+    <ion-card-header text-wrap>
+      <h2>{{selectedProduct.name}}</h2>
+    </ion-card-header>
+    <ion-card-content text-wrap>
+      <ul>
+        <li>Marca: {{selectedProduct.brand}}</li>
+        <li>Precio: {{selectedProduct.price}}</li>
+        <li>Detalles: {{selectedProduct.description}}</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

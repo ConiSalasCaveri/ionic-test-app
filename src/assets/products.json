@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "canceled": false,
+    "text":"4005808979813",
+    "format":"EAN-8",
+    "name":"Desodorante invisible black and white",
+    "brand":"Nivea",
+    "price":"$ 57",
+    "description":"Un desodorante"
+  },
+  {
+    "id": 2,
+    "canceled": false,
+    "text":"8005125325375",
+    "format":"EAN-8",
+    "name":"Rompecabezas 2000 piezas leopard",
+    "brand":"Clementoni",
+    "price": "$ 1200",
+    "description":"Un rompecabezas"
+  },
+  {
+    "id": 3,
+    "canceled": false,
+    "text":"7792216048435",
+    "format":"EAN-8",
+    "name":"Cuaderno rayado 80 hojas",
+    "brand":"Great value",
+    "price":"$ 80",
+    "description":"Un cuaderno"
+  },
+  {
+    "id": 4,
+    "canceled": false,
+    "text":"7790150079973",
+    "format":"EAN-8",
+    "name":"Cafe en saquitos",
+    "brand":"La virginia",
+    "price":"$ 63",
+    "description":"Un cafe"
+  },
+  {
+    "id": 5,
+    "canceled": false,
+    "text":"7798065733454",
+    "format":"EAN-8",
+    "name":"Agua mineral sin gas",
+    "brand":"Sierra de los padres",
+    "price":"$ 20",
+    "description":"Un agua"
+  }
+]

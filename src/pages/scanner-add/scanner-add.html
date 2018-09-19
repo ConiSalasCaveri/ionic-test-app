@@ -1,0 +1,43 @@
+<ion-header>
+</ion-header>
+
+
+<ion-content text-center padding>
+  <ion-card padding style="font-size: 15px">Ingrese el nombre del producto y escanee su código de barras para registrarlo en el sistema.</ion-card>
+  <ion-card>
+    <ion-input type="text" text-center placeholder="Ingrese el nombre del producto" [value]="productName" [(ngModel)]="productName"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-input type="text" text-center placeholder="Ingrese la marca del producto" [value]="productBrand" [(ngModel)]="productBrand"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-input type="text" text-center placeholder="Ingrese el precio del producto" [value]="productPrice" [(ngModel)]="productPrice"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-input type="text" text-center placeholder="Ingrese un detalle del producto" [value]="productDetail" [(ngModel)]="productDetail"></ion-input>
+  </ion-card>
+
+  <button padding ion-button round full small (click)="scan()">
+    Escanear
+  </button>
+
+  <ion-list [virtualScroll]="this.barCodes" approxItemHeight="50px">
+    <ion-item *virtualItem="let product">
+      <ion-col>
+        <ion-row>
+          <strong>{{product.name}}</strong>
+        </ion-row>
+        <ion-row>
+          {{product.text}}
+        </ion-row>
+        <ion-row>
+          {{product.brand}}
+        </ion-row>
+        <ion-row>
+          {{product.price}}
+        </ion-row>
+      </ion-col>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

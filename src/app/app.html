@@ -1,0 +1,50 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-list-header>Lista de mis cosas</ion-list-header>
+
+      <!-- <ion-row>
+          <button menuClose ion-item (click)="goToFingerprintAuthenticationPage()">
+            <ion-col>
+              <ion-icon name="finger-print"> </ion-icon>
+            </ion-col>
+            <ion-col>
+              Registro de huellas digitales
+            </ion-col>
+          </button>
+        </ion-row> -->
+
+      <ion-row>
+        <button menuClose ion-item (click)="this.goToCameraPage()">
+          <ion-col>
+            <ion-icon name="camera"> </ion-icon>
+          </ion-col>
+          <ion-col>
+            Cámara
+          </ion-col>
+        </button>
+      </ion-row>
+
+      <ion-row>
+          <button menuClose ion-item (click)="this.goToScannerPage()">
+            <ion-col>
+              <ion-icon name="pulse"> </ion-icon>
+            </ion-col>
+            <ion-col>
+              Scanner de código de barras
+            </ion-col>
+          </button>
+        </ion-row>
+
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
