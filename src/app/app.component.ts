@@ -1,3 +1,4 @@
+import { FaceRecognitionPage } from './../pages/face-recognition/face-recognition';
 import { HomePage } from '../pages/home/home';
 import { FingerprintAuthenticationPage } from '../pages/fingerprint-authentication/fingerprint-authentication';
 import { ScannerPage } from '../pages/scanner/scanner';
@@ -46,5 +47,9 @@ export class MyApp {
 
   goToFingerprintAuthenticationPage() {
     this.nav.push(FingerprintAuthenticationPage);
+  }
+
+  goToFaceRecognitionPage() {
+    this.nav.push(FaceRecognitionPage);
   }
 }

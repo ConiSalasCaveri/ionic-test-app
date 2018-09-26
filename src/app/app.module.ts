@@ -1,3 +1,4 @@
+import { FaceRecognitionPage } from './../pages/face-recognition/face-recognition';
 import { Geolocation } from '@ionic-native/geolocation';
 //OTHERS
 import { FingerprintAuthenticationPage } from '../pages/fingerprint-authentication/fingerprint-authentication';
@@ -25,6 +26,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Toast } from '@ionic-native/toast';
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { FaceRecognitionService } from '../providers/face-recognition-service/face-recognition-service';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
     FingerprintAuthenticationPage,
     LoginPage,
     ScannerAddPage,
-    ScannerSearchPage
+    ScannerSearchPage,
+    FaceRecognitionPage
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,8 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
     FingerprintAuthenticationPage,
     LoginPage,
     ScannerAddPage,
-    ScannerSearchPage
+    ScannerSearchPage,
+    FaceRecognitionPage
   ],
   providers: [
     StatusBar,
@@ -71,7 +75,8 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
     Vibration,
     LoadingController,
     LocalNotifications,
-    Geolocation
+    Geolocation,
+    FaceRecognitionService
   ]
 })
 export class AppModule {}

@@ -9,16 +9,16 @@
     <ion-list>
       <ion-list-header>Lista de mis cosas</ion-list-header>
 
-      <!-- <ion-row>
-          <button menuClose ion-item (click)="goToFingerprintAuthenticationPage()">
-            <ion-col>
-              <ion-icon name="finger-print"> </ion-icon>
-            </ion-col>
-            <ion-col>
-              Registro de huellas digitales
-            </ion-col>
-          </button>
-        </ion-row> -->
+      <ion-row>
+        <button menuClose ion-item (click)="goToFingerprintAuthenticationPage()">
+          <ion-col>
+            <ion-icon name="finger-print"> </ion-icon>
+          </ion-col>
+          <ion-col>
+            Registro de huellas digitales
+          </ion-col>
+        </button>
+      </ion-row>
 
       <ion-row>
         <button menuClose ion-item (click)="this.goToCameraPage()">
@@ -32,16 +32,26 @@
       </ion-row>
 
       <ion-row>
-          <button menuClose ion-item (click)="this.goToScannerPage()">
-            <ion-col>
-              <ion-icon name="pulse"> </ion-icon>
-            </ion-col>
-            <ion-col>
-              Scanner de código de barras
-            </ion-col>
-          </button>
-        </ion-row>
+        <button menuClose ion-item (click)="this.goToScannerPage()">
+          <ion-col>
+            <ion-icon name="pulse"> </ion-icon>
+          </ion-col>
+          <ion-col>
+            Scanner de código de barras
+          </ion-col>
+        </button>
+      </ion-row>
 
+      <ion-row>
+        <button menuClose ion-item (click)="goToFaceRecognitionPage()">
+          <ion-col>
+            <ion-icon name="sad"> </ion-icon>
+          </ion-col>
+          <ion-col>
+            Reconocimiento de rostro
+          </ion-col>
+        </button>
+      </ion-row>
     </ion-list>
   </ion-content>
 
